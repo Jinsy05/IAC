@@ -1,5 +1,0 @@
-app_user: "ubuntu"
-http_host: "iac.com"
-http_conf: "iac.conf"
-http_port: "80"
-disable_default: true
