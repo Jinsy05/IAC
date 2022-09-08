@@ -5,6 +5,7 @@ apt-get install unzip -y && \
 apt-get install wget -y && \
 # vim
 apt-get install vim -y
+apt install iputils-ping
 # Download terraform for linux
 wget https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip
 
