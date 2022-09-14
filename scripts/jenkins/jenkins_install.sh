@@ -12,12 +12,12 @@ apt-get install -y jenkins
 java -jar jenkins-plugin-manager-2.10.0.jar --war  /usr/share/java/jenkins.war --plugin-file /usr/share/jenkins/ref/plugins.txt  --plugin-download-directory /var/jenkins_home/plugins --verbose
 
 java  -Djenkins.install.runSetupWizard=false  -jar /usr/share/java/jenkins.war  &
-sleep 20
+sleep 30
 
 
 
 wget http://localhost:8080/jnlpJars/jenkins-cli.jar
-sleep 10
+sleep 30
 
 java -jar jenkins-cli.jar -s http://localhost:8080 create-job Terraform_Template_Job1 < /usr/share/jenkins/ref/Terraform_Template_Job.xml
 sleep "infinity"
