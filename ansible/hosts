@@ -1,8 +1,8 @@
-[webservers]
-52.39.108.234
-
 [tomcatserver]
-34.211.45.101
+54.149.200.29
 
-[postgressqlserver]
-34.219.26.184
+[postgress]
+35.92.199.125
+
+[wordpress]
+35.93.67.101
