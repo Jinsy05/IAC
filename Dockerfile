@@ -21,14 +21,14 @@ VOLUME /data
 COPY scripts/terraform.sh .
 COPY scripts/git.sh .
 COPY scripts/packer.sh .
-COPY scripts/ansible.sh .
+#COPY scripts/ansible.sh .
 
 
 
 RUN ./terraform.sh
 RUN ./git.sh
 RUN ./packer.sh
-RUN ./ansible.sh
+#RUN ./ansible.sh
 RUN mkdir -p /usr/share/jenkins/ref/init.groovy.d
 COPY scripts/jenkins/*  /usr/share/jenkins/ref/
 COPY scripts/jenkins/init.groovy/* /usr/share/jenkins/ref/init.groovy.d/
