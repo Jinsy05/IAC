@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "DevopsIacPipeline" {
-  bucket = "devopspipelinebkt"
+  bucket = "devopspipelinebkt1"
   acl    = "public-read"
 
   website {
